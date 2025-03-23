@@ -13,7 +13,7 @@
 Author: Aswin Sreeraj
 Date:
 Description:
-Input:
+Input: GPIO_Handle_t *pGPIOHandle, handle to the GPIO port
 Return: None
 ===================================================================================*/
 void GPIO_Init(GPIO_Handle_t *pGPIOHandle) {
@@ -35,11 +35,29 @@ void GPIO_DeInit(GPIO_RegDef_t *pGPIOx) {
 /* GPIO_PeriClockControl:===========================================================
 Author: Aswin Sreeraj
 Date:
-Description:
-Input:
+Description: Enable or Disable peripheral clock for the given GPIO port
+Input: 	GPIO_RegDef_t *pGPIOx, baseaddress of GPIO peripheral
+		uint8_t EnorDi, ENABLE or DISABLE macros
 Return: None
 ===================================================================================*/
 void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi) {
+	if(EnorDi == ENABLE) {
+		if(pGPIOx == GPIOA) {
+			GPIOA_PCLK_EN();
+		} else if(pGPIOx == GPIOB) {
+			GPIOB_PCLK_EN();
+		} else if(pGPIOx == GPIOC) {
+			GPIOC_PCLK_EN();
+		} else if(pGPIOx == GPIOD) {
+			GPIOD_PCLK_EN();
+		} else if(pGPIOx == GPIOE) {
+			GPIOE_PCLK_EN();
+		} elsE if(pGPIOx == GPIOH) {
+			GPIOH_PCLK_EN();
+		}
+	} else {
+
+	} // eo if-else
 
 } // eo GPIO_PeriClockControl:
 
@@ -77,7 +95,7 @@ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Val
 
 } // eo GPIO_WriteToOutputPin::
 
-/* GPIO_WriteToOutputPort:==================================================================
+/* GPIO_WriteToOutputPort:===========================================================
 Author: Aswin Sreeraj
 Date:
 Description:
@@ -88,7 +106,7 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value) {
 
 } // eo GPIO_WriteToOutputPort::
 
-/* GPIO_ToggleOutputPin:==================================================================
+/* GPIO_ToggleOutputPin:=============================================================
 Author: Aswin Sreeraj
 Date:
 Description:
@@ -111,7 +129,7 @@ void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi) {
 
 } // eo GPIO_IRQConfig::
 
-/* GPIO_IRQHandling:==================================================================
+/* GPIO_IRQHandling:=================================================================
 Author: Aswin Sreeraj
 Date:
 Description:
