@@ -172,7 +172,6 @@ typedef struct {
 
 // Clock disable macros for SPIx peripherals
 
-#define SPI1_PCLK_DI()						(RCC->APB2ENR &= ~(1 << 12))
 #define SPI2_PCLK_DI()						(RCC->APB1ENR &= ~(1 << 14))
 #define SPI3_PCLK_DI()						(RCC->APB1ENR &= ~(1 << 15))
 #define SPI4_PCLK_DI()						(RCC->APB2ENR &= ~(1 << 13))
