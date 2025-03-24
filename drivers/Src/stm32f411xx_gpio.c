@@ -154,24 +154,31 @@ uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx) {
 
 /* GPIO_WriteToOutputPin:============================================================
 Author: Aswin Sreeraj
-Date:
-Description:
-Input:
+Date: 23/03/2025
+Description: Write value to the individual pin of GPIO port
+Input: 	GPIO_RegDef_t *pGPIOx, base address of GPIO peripheral
+		uint8_t PinNumber, pin number to written to
+		uint8_t Value, value to be written (1 0r 0)
 Return: None
 ===================================================================================*/
 void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value) {
-
+	if(Value == GPIO_PIN_SET) {
+		pGPIOx->ODR |= (1 << PinNumber);
+	} else {
+		pGPIOx->ODR &= ~(1 << PinNumber);
+	} // if-else
 } // eo GPIO_WriteToOutputPin::
 
 /* GPIO_WriteToOutputPort:===========================================================
 Author: Aswin Sreeraj
-Date:
-Description:
-Input:
+Date: 23/03/2025
+Description: Write value to the GPIO port
+Input: 	GPIO_RegDef_t *pGPIOx, base address of GPIO peripheral
+		uint8_t Value, value to be written to the port
 Return: None
 ===================================================================================*/
 void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value) {
-
+	pGPIOx->ODR = Value;
 } // eo GPIO_WriteToOutputPort::
 
 /* GPIO_ToggleOutputPin:=============================================================
