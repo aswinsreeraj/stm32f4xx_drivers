@@ -63,7 +63,7 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle) {
 Author: Aswin Sreeraj
 Date: 23/03/2025
 Description: Deinitialize the GPIO ports
-Input: GPIO_RegDef_t *pGPIOx,
+Input: GPIO_RegDef_t *pGPIOx, base address of GPIO peripheral
 Return: None
 ===================================================================================*/
 void GPIO_DeInit(GPIO_RegDef_t *pGPIOx) {
@@ -87,7 +87,7 @@ void GPIO_DeInit(GPIO_RegDef_t *pGPIOx) {
 Author: Aswin Sreeraj
 Date: 23/03/2025
 Description: Enable or Disable peripheral clock for the given GPIO port
-Input: 	GPIO_RegDef_t *pGPIOx, baseaddress of GPIO peripheral
+Input: 	GPIO_RegDef_t *pGPIOx, base address of GPIO peripheral
 		uint8_t EnorDi, ENABLE or DISABLE macros
 Return: None
 ===================================================================================*/
@@ -127,24 +127,29 @@ void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi) {
 // Data read and write
 /* GPIO_ReadFromInputPin:===========================================================
 Author: Aswin Sreeraj
-Date:
-Description:
-Input:
-Return: None
+Date: 23/03/2025
+Description: Read the data from individual pin
+Input: 	GPIO_RegDef_t *pGPIOx, base address of GPIO peripheral
+		uint8_t PinNumber, pin number to be read from
+Return: uint8_t, return the pin value
 ===================================================================================*/
 uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber) {
-
+	uint8_t value;
+	value = (uint8_t)((pGPIOx->IDR >> PinNumber) & 0x00000001);
+	return value;
 } // eo GPIO_ReadFromInputPin::
 
 /* GPIO_ReadFromInputPort:===========================================================
 Author: Aswin Sreeraj
-Date:
-Description:
-Input:
-Return: None
+Date: 23/03/2025
+Description: Read data from the entire port
+Input: GPIO_RegDef_t *pGPIOx, base address of the GPIO peripheral
+Return: uint16_t, return the port value
 ===================================================================================*/
 uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx) {
-
+	uint16_t value;
+	value = (uint16_t)pGPIOx->IDR;
+	return value;
 } // eo GPIO_ReadFromInputPort::
 
 /* GPIO_WriteToOutputPin:============================================================
