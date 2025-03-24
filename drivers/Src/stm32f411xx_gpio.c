@@ -62,12 +62,24 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle) {
 /* GPIO_DeInit:=====================================================================
 Author: Aswin Sreeraj
 Date: 23/03/2025
-Description:
-Input:
+Description: Deinitialize the GPIO ports
+Input: GPIO_RegDef_t *pGPIOx,
 Return: None
 ===================================================================================*/
 void GPIO_DeInit(GPIO_RegDef_t *pGPIOx) {
-
+	if(pGPIOx == GPIOA) {
+		GPIOA_REG_RESET();
+	} else if(pGPIOx == GPIOB) {
+		GPIOB_REG_RESET();
+	} else if(pGPIOx == GPIOC) {
+		GPIOC_REG_RESET();
+	} else if(pGPIOx == GPIOD) {
+		GPIOD_REG_RESET();
+	} else if(pGPIOx == GPIOE) {
+		GPIOE_REG_RESET();
+	} else if(pGPIOx == GPIOH) {
+		GPIOH_REG_RESET();
+	} // eo if-else if
 } // eo GPIO_DeInit::
 
 // Peripheral clock setup

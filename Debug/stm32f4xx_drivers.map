@@ -281,7 +281,7 @@ Discarded input sections
  .text.GPIO_Init
                 0x00000000      0x192 ./drivers/Src/stm32f411xx_gpio.o
  .text.GPIO_DeInit
-                0x00000000       0x14 ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0xfc ./drivers/Src/stm32f411xx_gpio.o
  .text.GPIO_PeriClockControl
                 0x00000000      0x140 ./drivers/Src/stm32f411xx_gpio.o
  .text.GPIO_ReadFromInputPin
@@ -303,7 +303,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x68 ./drivers/Src/stm32f411xx_gpio.o
  .debug_rnglists
-                0x00000000       0x4b ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0x4c ./drivers/Src/stm32f411xx_gpio.o
  .debug_macro   0x00000000       0x81 ./drivers/Src/stm32f411xx_gpio.o
  .debug_macro   0x00000000      0xaba ./drivers/Src/stm32f411xx_gpio.o
  .debug_macro   0x00000000       0x22 ./drivers/Src/stm32f411xx_gpio.o
@@ -312,10 +312,10 @@ Discarded input sections
  .debug_macro   0x00000000      0x103 ./drivers/Src/stm32f411xx_gpio.o
  .debug_macro   0x00000000       0x6a ./drivers/Src/stm32f411xx_gpio.o
  .debug_macro   0x00000000      0x1df ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000      0x1bb ./drivers/Src/stm32f411xx_gpio.o
+ .debug_macro   0x00000000      0x1e5 ./drivers/Src/stm32f411xx_gpio.o
  .debug_macro   0x00000000       0xe8 ./drivers/Src/stm32f411xx_gpio.o
- .debug_line    0x00000000      0x6e0 ./drivers/Src/stm32f411xx_gpio.o
- .debug_str     0x00000000     0x4dc9 ./drivers/Src/stm32f411xx_gpio.o
+ .debug_line    0x00000000      0x71d ./drivers/Src/stm32f411xx_gpio.o
+ .debug_str     0x00000000     0x4feb ./drivers/Src/stm32f411xx_gpio.o
  .comment       0x00000000       0x44 ./drivers/Src/stm32f411xx_gpio.o
  .debug_frame   0x00000000      0x1a0 ./drivers/Src/stm32f411xx_gpio.o
  .ARM.attributes
@@ -835,7 +835,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x00000013       0x19 ./Startup/startup_stm32f411ceux.o
 
-.debug_macro    0x00000000     0x122f
+.debug_macro    0x00000000     0x1259
  .debug_macro   0x00000000       0x7f ./Src/main.o
  .debug_macro   0x0000007f      0xaba ./Src/main.o
  .debug_macro   0x00000b39       0x22 ./Src/main.o
@@ -844,17 +844,17 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00000c3a      0x103 ./Src/main.o
  .debug_macro   0x00000d3d       0x6a ./Src/main.o
  .debug_macro   0x00000da7      0x1df ./Src/main.o
- .debug_macro   0x00000f86      0x1c1 ./Src/main.o
- .debug_macro   0x00001147       0xe8 ./Src/main.o
+ .debug_macro   0x00000f86      0x1eb ./Src/main.o
+ .debug_macro   0x00001171       0xe8 ./Src/main.o
 
 .debug_line     0x00000000      0x4ee
  .debug_line    0x00000000      0x473 ./Src/main.o
  .debug_line    0x00000473       0x7b ./Startup/startup_stm32f411ceux.o
 
-.debug_str      0x00000000     0x49b5
- .debug_str     0x00000000     0x4976 ./Src/main.o
-                               0x4ad1 (size before relaxing)
- .debug_str     0x00004976       0x3f ./Startup/startup_stm32f411ceux.o
+.debug_str      0x00000000     0x4bd7
+ .debug_str     0x00000000     0x4b98 ./Src/main.o
+                               0x4cf3 (size before relaxing)
+ .debug_str     0x00004b98       0x3f ./Startup/startup_stm32f411ceux.o
                                  0x79 (size before relaxing)
 
 .comment        0x00000000       0x43
