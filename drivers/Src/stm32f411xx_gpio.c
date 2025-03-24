@@ -183,13 +183,14 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value) {
 
 /* GPIO_ToggleOutputPin:=============================================================
 Author: Aswin Sreeraj
-Date:
-Description:
-Input:
+Date: 23/03/2025
+Description: Toggle the value of the individual pin
+Input:	GPIO_RegDef_t *pGPIOx, base address of GPIO peripheral
+		uint8_t PinNumber, pin to be toggled
 Return: None
 ===================================================================================*/
 void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber) {
-
+	pGPIOx->ODR ^= (1 << PinNumber);
 } // eo GPIO_ToggleOutputPin::
 
 // IRQ Configuration and ISR handling
