@@ -61,7 +61,7 @@ typedef struct {
 
 // GPIO output types
 // @GPIO_PIN_OP_TYPE
-#define GPIO_OP_TYPE_pp			0
+#define GPIO_OP_TYPE_PP			0
 #define GPIO_OP_TYPE_OD			1
 
 // GPIO output speeds
@@ -97,16 +97,9 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint8_t Value);
 void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber);
 
 // IRQ Configuration and ISR handling
-void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi);
+void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);
+void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint8_t IRQPriority);
 void GPIO_IRQHandling(uint8_t PinNumber);
-
-// Generic Macros
-#define ENABLE 						1
-#define DISABLE 					0
-#define SET 						ENABLE
-#define RESET 						DISABLE
-#define GPIO_PIN_SET				SET
-#define GPIO_PIN_RESET				RESET
 
 
 #endif /* INC_STM32F411XX_GPIO_DRIVER_H_ */
