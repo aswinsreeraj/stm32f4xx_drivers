@@ -283,37 +283,87 @@ Discarded input sections
  .text          0x00000000       0x14 ./Startup/startup_stm32f411ceux.o
  .data          0x00000000        0x0 ./Startup/startup_stm32f411ceux.o
  .bss           0x00000000        0x0 ./Startup/startup_stm32f411ceux.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio.o
- .text          0x00000000        0x0 ./drivers/Src/stm32f411xx_gpio.o
- .data          0x00000000        0x0 ./drivers/Src/stm32f411xx_gpio.o
- .bss           0x00000000        0x0 ./drivers/Src/stm32f411xx_gpio.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_gpio_driver.o
+ .text          0x00000000        0x0 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .data          0x00000000        0x0 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .bss           0x00000000        0x0 ./drivers/Src/stm32f411xx_gpio_driver.o
  .text.GPIO_DeInit
-                0x00000000       0xfc ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0xfc ./drivers/Src/stm32f411xx_gpio_driver.o
  .text.GPIO_ReadFromInputPin
-                0x00000000       0x2c ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0x2c ./drivers/Src/stm32f411xx_gpio_driver.o
  .text.GPIO_ReadFromInputPort
-                0x00000000       0x1c ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0x1c ./drivers/Src/stm32f411xx_gpio_driver.o
  .text.GPIO_WriteToOutputPin
-                0x00000000       0x4a ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0x4a ./drivers/Src/stm32f411xx_gpio_driver.o
  .text.GPIO_WriteToOutputPort
-                0x00000000       0x1e ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000      0xaba ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000       0x22 ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000       0x8e ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000       0x51 ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000      0x103 ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000       0x6a ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000      0x1df ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000      0x309 ./drivers/Src/stm32f411xx_gpio.o
- .debug_macro   0x00000000       0xc4 ./drivers/Src/stm32f411xx_gpio.o
+                0x00000000       0x1e ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000      0xaba ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000       0x22 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000       0x8e ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000       0x51 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000      0x103 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000       0x6a ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000      0x1df ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000      0x333 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .debug_macro   0x00000000       0xc4 ./drivers/Src/stm32f411xx_gpio_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .group         0x00000000        0xc ./drivers/Src/stm32f411xx_spi_driver.o
+ .text          0x00000000        0x0 ./drivers/Src/stm32f411xx_spi_driver.o
+ .data          0x00000000        0x0 ./drivers/Src/stm32f411xx_spi_driver.o
+ .bss           0x00000000        0x0 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_Init
+                0x00000000       0x14 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_DeInit
+                0x00000000       0x14 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_PeriClockControl
+                0x00000000      0x110 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_SendData
+                0x00000000       0x18 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_ReceiveData
+                0x00000000       0x18 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_IRQInterruptConfig
+                0x00000000       0x1c ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_IRQPriorityConfig
+                0x00000000       0x18 ./drivers/Src/stm32f411xx_spi_driver.o
+ .text.SPI_IRQHandling
+                0x00000000       0x14 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_info    0x00000000      0x4c9 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_abbrev  0x00000000       0xec ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_aranges
+                0x00000000       0x58 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_rnglists
+                0x00000000       0x3e ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000       0x95 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000      0xaba ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000       0x22 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000       0x8e ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000       0x51 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000      0x103 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000       0x6a ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000      0x1df ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000      0x333 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_macro   0x00000000       0xc4 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_line    0x00000000      0x5ae ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_str     0x00000000     0x548e ./drivers/Src/stm32f411xx_spi_driver.o
+ .comment       0x00000000       0x44 ./drivers/Src/stm32f411xx_spi_driver.o
+ .debug_frame   0x00000000      0x150 ./drivers/Src/stm32f411xx_spi_driver.o
+ .ARM.attributes
+                0x00000000       0x34 ./drivers/Src/stm32f411xx_spi_driver.o
  .text          0x00000000        0x0 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
  .data          0x00000000        0x0 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
  .bss           0x00000000        0x0 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
@@ -554,7 +604,8 @@ LOAD ./Src/button_interrupt.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
 LOAD ./Startup/startup_stm32f411ceux.o
-LOAD ./drivers/Src/stm32f411xx_gpio.o
+LOAD ./drivers/Src/stm32f411xx_gpio_driver.o
+LOAD ./drivers/Src/stm32f411xx_spi_driver.o
 START GROUP
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
@@ -670,23 +721,23 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x08000300                DMA1_Stream3_IRQHandler
  *fill*         0x08000302        0x2 
  .text.GPIO_Init
-                0x08000304      0x304 ./drivers/Src/stm32f411xx_gpio.o
+                0x08000304      0x304 ./drivers/Src/stm32f411xx_gpio_driver.o
                 0x08000304                GPIO_Init
  .text.GPIO_PeriClockControl
-                0x08000608      0x140 ./drivers/Src/stm32f411xx_gpio.o
+                0x08000608      0x140 ./drivers/Src/stm32f411xx_gpio_driver.o
                 0x08000608                GPIO_PeriClockControl
  .text.GPIO_ToggleOutputPin
-                0x08000748       0x2a ./drivers/Src/stm32f411xx_gpio.o
+                0x08000748       0x2a ./drivers/Src/stm32f411xx_gpio_driver.o
                 0x08000748                GPIO_ToggleOutputPin
  *fill*         0x08000772        0x2 
  .text.GPIO_IRQInterruptConfig
-                0x08000774      0x10c ./drivers/Src/stm32f411xx_gpio.o
+                0x08000774      0x10c ./drivers/Src/stm32f411xx_gpio_driver.o
                 0x08000774                GPIO_IRQInterruptConfig
  .text.GPIO_IRQPriorityConfig
-                0x08000880       0x54 ./drivers/Src/stm32f411xx_gpio.o
+                0x08000880       0x54 ./drivers/Src/stm32f411xx_gpio_driver.o
                 0x08000880                GPIO_IRQPriorityConfig
  .text.GPIO_IRQHandling
-                0x080008d4       0x40 ./drivers/Src/stm32f411xx_gpio.o
+                0x080008d4       0x40 ./drivers/Src/stm32f411xx_gpio_driver.o
                 0x080008d4                GPIO_IRQHandling
  .text.memset   0x08000914       0x10 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
                 0x08000914                memset
@@ -820,7 +871,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .ARM.attributes
                 0x0000008a       0x21 ./Startup/startup_stm32f411ceux.o
  .ARM.attributes
-                0x000000ab       0x34 ./drivers/Src/stm32f411xx_gpio.o
+                0x000000ab       0x34 ./drivers/Src/stm32f411xx_gpio_driver.o
  .ARM.attributes
                 0x000000df       0x34 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
  .ARM.attributes
@@ -836,12 +887,12 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 .debug_info     0x00000000      0xa13
  .debug_info    0x00000000      0x2fc ./Src/button_interrupt.o
  .debug_info    0x000002fc       0x30 ./Startup/startup_stm32f411ceux.o
- .debug_info    0x0000032c      0x6e7 ./drivers/Src/stm32f411xx_gpio.o
+ .debug_info    0x0000032c      0x6e7 ./drivers/Src/stm32f411xx_gpio_driver.o
 
 .debug_abbrev   0x00000000      0x2b5
  .debug_abbrev  0x00000000      0x14a ./Src/button_interrupt.o
  .debug_abbrev  0x0000014a       0x24 ./Startup/startup_stm32f411ceux.o
- .debug_abbrev  0x0000016e      0x147 ./drivers/Src/stm32f411xx_gpio.o
+ .debug_abbrev  0x0000016e      0x147 ./drivers/Src/stm32f411xx_gpio_driver.o
 
 .debug_aranges  0x00000000       0xc8
  .debug_aranges
@@ -849,7 +900,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_aranges
                 0x00000030       0x28 ./Startup/startup_stm32f411ceux.o
  .debug_aranges
-                0x00000058       0x70 ./drivers/Src/stm32f411xx_gpio.o
+                0x00000058       0x70 ./drivers/Src/stm32f411xx_gpio_driver.o
 
 .debug_rnglists
                 0x00000000       0x8c
@@ -858,59 +909,59 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x00000020       0x19 ./Startup/startup_stm32f411ceux.o
  .debug_rnglists
-                0x00000039       0x53 ./drivers/Src/stm32f411xx_gpio.o
+                0x00000039       0x53 ./drivers/Src/stm32f411xx_gpio_driver.o
 
-.debug_macro    0x00000000     0x1e28
- .debug_macro   0x00000000      0x15f ./Src/button_interrupt.o
- .debug_macro   0x0000015f      0xaba ./Src/button_interrupt.o
- .debug_macro   0x00000c19       0x22 ./Src/button_interrupt.o
- .debug_macro   0x00000c3b       0x8e ./Src/button_interrupt.o
- .debug_macro   0x00000cc9       0x51 ./Src/button_interrupt.o
- .debug_macro   0x00000d1a      0x103 ./Src/button_interrupt.o
- .debug_macro   0x00000e1d       0x6a ./Src/button_interrupt.o
- .debug_macro   0x00000e87      0x1df ./Src/button_interrupt.o
- .debug_macro   0x00001066      0x309 ./Src/button_interrupt.o
- .debug_macro   0x0000136f       0xc4 ./Src/button_interrupt.o
- .debug_macro   0x00001433       0x61 ./Src/button_interrupt.o
- .debug_macro   0x00001494       0x2a ./Src/button_interrupt.o
- .debug_macro   0x000014be       0x43 ./Src/button_interrupt.o
- .debug_macro   0x00001501       0x34 ./Src/button_interrupt.o
- .debug_macro   0x00001535      0x189 ./Src/button_interrupt.o
- .debug_macro   0x000016be       0x16 ./Src/button_interrupt.o
- .debug_macro   0x000016d4       0x43 ./Src/button_interrupt.o
- .debug_macro   0x00001717       0x34 ./Src/button_interrupt.o
- .debug_macro   0x0000174b       0x10 ./Src/button_interrupt.o
- .debug_macro   0x0000175b       0x58 ./Src/button_interrupt.o
- .debug_macro   0x000017b3       0x8e ./Src/button_interrupt.o
- .debug_macro   0x00001841       0x1c ./Src/button_interrupt.o
- .debug_macro   0x0000185d      0x177 ./Src/button_interrupt.o
- .debug_macro   0x000019d4      0x369 ./Src/button_interrupt.o
- .debug_macro   0x00001d3d       0x10 ./Src/button_interrupt.o
- .debug_macro   0x00001d4d       0x35 ./Src/button_interrupt.o
- .debug_macro   0x00001d82       0x20 ./Src/button_interrupt.o
- .debug_macro   0x00001da2       0x86 ./drivers/Src/stm32f411xx_gpio.o
+.debug_macro    0x00000000     0x1e6c
+ .debug_macro   0x00000000      0x16a ./Src/button_interrupt.o
+ .debug_macro   0x0000016a      0xaba ./Src/button_interrupt.o
+ .debug_macro   0x00000c24       0x22 ./Src/button_interrupt.o
+ .debug_macro   0x00000c46       0x8e ./Src/button_interrupt.o
+ .debug_macro   0x00000cd4       0x51 ./Src/button_interrupt.o
+ .debug_macro   0x00000d25      0x103 ./Src/button_interrupt.o
+ .debug_macro   0x00000e28       0x6a ./Src/button_interrupt.o
+ .debug_macro   0x00000e92      0x1df ./Src/button_interrupt.o
+ .debug_macro   0x00001071      0x333 ./Src/button_interrupt.o
+ .debug_macro   0x000013a4       0xc4 ./Src/button_interrupt.o
+ .debug_macro   0x00001468       0x61 ./Src/button_interrupt.o
+ .debug_macro   0x000014c9       0x2a ./Src/button_interrupt.o
+ .debug_macro   0x000014f3       0x43 ./Src/button_interrupt.o
+ .debug_macro   0x00001536       0x34 ./Src/button_interrupt.o
+ .debug_macro   0x0000156a      0x189 ./Src/button_interrupt.o
+ .debug_macro   0x000016f3       0x16 ./Src/button_interrupt.o
+ .debug_macro   0x00001709       0x43 ./Src/button_interrupt.o
+ .debug_macro   0x0000174c       0x34 ./Src/button_interrupt.o
+ .debug_macro   0x00001780       0x10 ./Src/button_interrupt.o
+ .debug_macro   0x00001790       0x58 ./Src/button_interrupt.o
+ .debug_macro   0x000017e8       0x8e ./Src/button_interrupt.o
+ .debug_macro   0x00001876       0x1c ./Src/button_interrupt.o
+ .debug_macro   0x00001892      0x177 ./Src/button_interrupt.o
+ .debug_macro   0x00001a09      0x369 ./Src/button_interrupt.o
+ .debug_macro   0x00001d72       0x10 ./Src/button_interrupt.o
+ .debug_macro   0x00001d82       0x35 ./Src/button_interrupt.o
+ .debug_macro   0x00001db7       0x20 ./Src/button_interrupt.o
+ .debug_macro   0x00001dd7       0x95 ./drivers/Src/stm32f411xx_gpio_driver.o
 
-.debug_line     0x00000000     0x1059
- .debug_line    0x00000000      0x65c ./Src/button_interrupt.o
- .debug_line    0x0000065c       0x7b ./Startup/startup_stm32f411ceux.o
- .debug_line    0x000006d7      0x982 ./drivers/Src/stm32f411xx_gpio.o
+.debug_line     0x00000000     0x1098
+ .debug_line    0x00000000      0x678 ./Src/button_interrupt.o
+ .debug_line    0x00000678       0x7b ./Startup/startup_stm32f411ceux.o
+ .debug_line    0x000006f3      0x9a5 ./drivers/Src/stm32f411xx_gpio_driver.o
 
-.debug_str      0x00000000     0x87f9
- .debug_str     0x00000000     0x8591 ./Src/button_interrupt.o
-                               0x878b (size before relaxing)
- .debug_str     0x00008591       0x3f ./Startup/startup_stm32f411ceux.o
+.debug_str      0x00000000     0x8904
+ .debug_str     0x00000000     0x8695 ./Src/button_interrupt.o
+                               0x888f (size before relaxing)
+ .debug_str     0x00008695       0x3f ./Startup/startup_stm32f411ceux.o
                                  0x79 (size before relaxing)
- .debug_str     0x000085d0      0x229 ./drivers/Src/stm32f411xx_gpio.o
-                               0x5499 (size before relaxing)
+ .debug_str     0x000086d4      0x230 ./drivers/Src/stm32f411xx_gpio_driver.o
+                               0x55a4 (size before relaxing)
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Src/button_interrupt.o
                                  0x44 (size before relaxing)
- .comment       0x00000043       0x44 ./drivers/Src/stm32f411xx_gpio.o
+ .comment       0x00000043       0x44 ./drivers/Src/stm32f411xx_gpio_driver.o
 
 .debug_frame    0x00000000      0x288
  .debug_frame   0x00000000       0x74 ./Src/button_interrupt.o
- .debug_frame   0x00000074      0x1c8 ./drivers/Src/stm32f411xx_gpio.o
+ .debug_frame   0x00000074      0x1c8 ./drivers/Src/stm32f411xx_gpio_driver.o
  .debug_frame   0x0000023c       0x20 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
  .debug_frame   0x0000025c       0x2c C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 
